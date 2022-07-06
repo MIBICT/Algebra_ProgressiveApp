@@ -20,8 +20,8 @@ async function checkWeather(e, city) {
     e.preventDefault();
   }
 
-  // kad se funkcija pokrene, default prikazani grad je Rijeka
-  city = input.value ? input.value : "Rijeka";
+  // kad se funkcija pokrene, default prikazani grad je Lipik
+  city = input.value ? input.value : "Lipik";
   let data = await fetch(
     `http://api.weatherapi.com/v1/current.json?key=9e31c87e2cf54a83be093059220207&q=${city}&aqi=yes`
   );
