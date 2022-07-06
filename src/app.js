@@ -43,7 +43,7 @@ function writeData(data) {
     const conditionImg = data.current.condition.icon; // slika za trenutno vrijeme
     const conditionText = data.current.condition.text; // tekst za trenutno vrijeme
     const currentHumidity = data.current.humidity; // trenutna vlaga
-    const feelsLike = data.current.feelslike_c; // očekivana temperatura
+    const feelsLike = data.current.feelslike_c; // osječaj temperature
     const currentWind = data.current.wind_kph; // trenutni vjetar
     const randomNumber = Math.floor(Math.random() * 5) + 1; //random broj do 5 za sliku
     const localTime = data.location.localtime; // trenutno vrijeme lokacije koju pretražujemo
@@ -88,7 +88,7 @@ function writeData(data) {
     // glavni rezultati vremena
     resultDiv.innerHTML = `
 <div id="results-container">
-        <h1 class="temp">${currentTemp} &#176</h1>
+        <h1 class="temp">${currentTemp} &#176C</h1>
         <div class="city-time">
         <h1 class="name">${cityName}</h1>
         <small>
