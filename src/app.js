@@ -138,20 +138,20 @@ function getPicture(currentCondition, nightOrDay, number = 1) {
 // vraća trenutno vrijeme za lokaciju koju pretraživamo
 function trenutnoVrijemePretrazivanogGrada(localTime) {
   const date = new Date(localTime);
-  return `${date.getHours()}:${date.getMinutes()}`;
+  return `${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes()}`;
 }
 
-//vraća trenutni dan-tj. datum za lokaciju koju pretraživamo
+//vraća trenutni dan / datum za lokaciju koju pretraživamo
 function trenutniDatumPretrazivanogGrada(localTime) {
   const date = new Date(localTime);
-  return `${date.toLocaleString("en-EN", {
+  return `${date.toLocaleString("hr-HR", {
     weekday: "long",
-  })}, ${date.getDate()} ${date.toLocaleString("en-EN", {
+  })}, ${date.getDate()} ${date.toLocaleString("hr-HR", {
     month: "short",
   })}`;
 }
 
-//Funckcija koja provjerava dali je vrijednost @x izmedu min i max
+//Funkcija koja provjerava dali je vrijednost @x izmedu min i max
 function izmedu(x, min, max) {
   return x >= min && x <= max;
 }
