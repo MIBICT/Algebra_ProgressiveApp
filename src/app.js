@@ -4,10 +4,9 @@ const resultDiv = document.getElementById("results"); //div u koji se upisuju po
 const background = document.querySelector(".weather-app"); //dohvati div kontenjer u kojem je cijela app
 const additionalInfo = document.getElementById("additional_info"); //div kontenjer s desne strane app-a
 
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./pwa-examples/js13kpwa/sw.js');
-};
-
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
 
 button.addEventListener("click", checkWeather); //dodaje event listener na dugme
 document.addEventListener("DOMContentLoaded", checkWeather); //kada se DOM učita, pozovi funkciju checkWeather
