@@ -112,9 +112,9 @@ function writeData(data) {
     // dodatne informacije sa strane
     additionalInfo.innerHTML = `      <div class="more_information">
 <ul class="info_items">
-  <li><i class="fa-solid fa-droplet"></i> Currenty Humidity: ${currentHumidity}%</li>
-  <li><i class="fa-solid fa-temperature-half"></i> Feels like: ${feelsLike} &#176</li>
-  <li><i class="fa-solid fa-wind"></i> Wind: ${currentWind} km/h</li>
+  <li><i class="fa-solid fa-droplet"></i> Vlažnost zraka: ${currentHumidity}%</li>
+  <li><i class="fa-solid fa-temperature-half"></i> Osjećaj ugode: ${feelsLike} &#176</li>
+  <li><i class="fa-solid fa-wind"></i> Vjetar: ${currentWind} km/h</li>
 </ul>
 </div>`;
 
